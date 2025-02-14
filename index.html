@@ -14,17 +14,29 @@
       padding: 0;
       overflow: hidden;
     }
-    .carta {
-    width: 80%; /* Define uma largura mais agradável */
-    margin: auto; /* Centraliza o texto na página */
+.carta-container {
+    width: 80%; /* Define uma largura agradável */
+    max-width: 600px; /* Limita a largura para telas grandes */
+    margin: auto; /* Centraliza o conteúdo */
+    border: 2px solid #0077b6; /* Adiciona uma borda azul */
+    border-radius: 10px; /* Arredonda os cantos */
+    padding: 10px;
+    background: #f8f9fa; /* Cor de fundo suave */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+.carta {
+    max-height: 250px; /* Define uma altura fixa para o texto */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+    padding: 10px;
 }
 
 .carta p {
     text-align: justify; /* Justifica o texto */
-    font-size: 20px; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Deixa o texto mais destacado */
+    font-size: 18px; /* Tamanho agradável da fonte */
+    font-weight: bold; /* Texto destacado */
     line-height: 1.6; /* Melhora a legibilidade */
-    font-family: 'Arial', sans-serif; /* Usa uma fonte mais elegante */
+    font-family: 'Arial', sans-serif; /* Usa uma fonte elegante */
 }
 
     h1 {
@@ -73,22 +85,25 @@
   </style>
 </head>
 <body>
-  <div class="carta">
-    <p>
-        Meu amor,<br><br>
-        
-        Desde aquele show da Anitta, onde milhares de pessoas vibravam juntas, foi você quem brilhou para mim. No meio da multidão, foi como se o universo tivesse resolvido resolver uma equação perfeita: <strong>Gustavo + Douglas = infinito.</strong><br><br>
+<div class="carta-container">
+    <div class="carta">
+        <p>
+            Meu amor,<br><br>
+            
+            Desde aquele show da Anitta, onde milhares de pessoas vibravam juntas, foi você quem brilhou para mim. No meio da multidão, foi como se o universo tivesse resolvido resolver uma equação perfeita: <strong>Gustavo + Douglas = infinito.</strong><br><br>
 
-        Em apenas um mês, você se tornou minha constante, meu número irracional favorito—impossível de definir, mas essencial na minha vida. Se o amor fosse como os filmes de <strong>Harry Potter</strong>, eu diria que você lançou o feitiço mais poderoso em mim, porque desde então, não consigo mais escapar do seu encanto.<br><br>
+            Em apenas um mês, você se tornou minha constante, meu número irracional favorito—impossível de definir, mas essencial na minha vida. Se o amor fosse como os filmes de <strong>Harry Potter</strong>, eu diria que você lançou o feitiço mais poderoso em mim, porque desde então, não consigo mais escapar do seu encanto.<br><br>
 
-        E falando em magia e raridades... dizem que os dinossauros foram extintos, mas eu acho que encontrei um que sobreviveu—um ser único, incrível e que me faz sentir que sou a pessoa mais sortuda do mundo.<br><br>
+            E falando em magia e raridades... dizem que os dinossauros foram extintos, mas eu acho que encontrei um que sobreviveu—um ser único, incrível e que me faz sentir que sou a pessoa mais sortuda do mundo.<br><br>
 
-        Sei que é cedo, mas se existe um destino traçado, o meu já está claro: é ao seu lado. 💙<br><br>
+            Sei que é cedo, mas se existe um destino traçado, o meu já está claro: é ao seu lado. 💙<br><br>
 
-        Com todo o meu amor,<br>
-        <strong>Gustavo</strong>
-    </p>
+            Com todo o meu amor,<br>
+            <strong>Gustavo</strong>
+        </p>
+    </div>
 </div>
+
   <h3>Douglas Melo Fontes, você aceita namorar comigo?</h3>
   <div class="botoes">
     <button id="sim" class="botao">Sim</button>
