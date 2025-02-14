@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pedido de Namoro D&G </title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -127,7 +128,15 @@
     });
 
     document.getElementById('nao').addEventListener('click', function() {
-      alert("Você só pode ter clicado errado amor, o sim tá bem ali no meio");
+     Swal.fire({
+                title: "Tem certeza?",
+                text: "Você escolheu 'Não'.",
+                icon: "warning",
+                confirmButtonText: "Ok",
+                confirmButtonColor: "#ff4d4d",
+                background: "#fff",
+                color: "#333"
+            });
       this.style.top = Math.random() * window.innerHeight + 'px';
       this.style.left = Math.random() * window.innerWidth + 'px';
     });
